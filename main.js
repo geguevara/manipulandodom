@@ -65,7 +65,7 @@ const createPizza = (pizza)=>{
     return `
         <div id="card-container">
             <img src="${imagen}" alt="" srcset="">
-            <h2>${nombre}</h2>
+            <h2>${nombre.toUpperCase()}</h2>
             <p>$ ${precio}</p>
         </div>
         `
