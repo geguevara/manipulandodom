@@ -17,6 +17,17 @@ body{
     width: 100%;
     font-family: 'Wix Madefor Display', sans-serif;
 }
+.header{
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.header img{
+    width: 80px;
+}
 main{
     display: flex;
     flex-direction: column;
@@ -35,7 +46,6 @@ main{
 #input-number, #button{
     padding: 10px;
     border-radius: 10px;
-    
     text-transform: uppercase;
 }
 #input-number{
@@ -43,7 +53,6 @@ main{
     padding-left: 10px;
     color: aliceblue;
 }
- 
 #input-number:hover, #input-number:focus{
     box-shadow: 0 0 10px 1px var(--blue);
     transition: all 0.3s;

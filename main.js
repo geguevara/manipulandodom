@@ -52,7 +52,7 @@ const card = document.querySelector("#card");
 
 let listPizza = JSON.parse(localStorage.getItem("pizza")) || [];
 
-const saveLocalStorage = (pizza) => {
+const saveLocalStorage = (listPizza) => {
 	localStorage.setItem("pizza", JSON.stringify(listPizza));
 };
 
@@ -80,8 +80,8 @@ const renderPizza=(pizza)=>{
         
     }
 }
-const saveRenderPizza = (pizza) =>{
-    if (pizza){
+const saveRenderPizza = (listPizza) =>{
+    if (listPizza){
   card.innerHTML = createPizza(listPizza);
 }
 }
@@ -101,7 +101,7 @@ const submitSearch = (e)=>{
 const init =()=>{
     /* document.addEventListener("DOMContentLoaded", createPizza); */
     form.addEventListener("submit", submitSearch);
-    saveRenderPizza()
+    saveRenderPizza(listPizza)
     
 }
 init()
